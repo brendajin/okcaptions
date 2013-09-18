@@ -51,14 +51,12 @@ function getCaption(time) {
 }
 
 function updatePlayerInfo() {
-  if(ytplayer && ytplayer.getDuration) {
-    updateHTML("videoDuration", ytplayer.getDuration());
-    updateHTML("videoCurrentTime", ytplayer.getCurrentTime());
-    updateHTML("bytesTotal", ytplayer.getVideoBytesTotal());
-    updateHTML("startBytes", ytplayer.getVideoStartBytes());
-    updateHTML("bytesLoaded", ytplayer.getVideoBytesLoaded());
-  }
-  if(ytplayer.getPlayerState() == 1) {
+  if(ytplayer && ytplayer.getDuration && ytplayer.getPlayerState() == 1) {
+    // updateHTML("videoDuration", ytplayer.getDuration());
+    // updateHTML("videoCurrentTime", ytplayer.getCurrentTime());
+    // updateHTML("bytesTotal", ytplayer.getVideoBytesTotal());
+    // updateHTML("startBytes", ytplayer.getVideoStartBytes());
+    // updateHTML("bytesLoaded", ytplayer.getVideoBytesLoaded());
     getCaption(ytplayer.getCurrentTime());
   }
 }
