@@ -17,7 +17,7 @@ limitations under the License.
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Captions: An App for Google Glass</title>
+  <title>Captions: An App for Glass</title>
   <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet"
         media="screen">
   <link href="/static/bootstrap/css/bootstrap-responsive.min.css"
@@ -27,13 +27,17 @@ limitations under the License.
   #whole-body.container {
     visibility: hidden;
   }
+  #real-stuff iframe {
+    margin:0 auto;
+    display: block;
+  }
   </style>
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="#">Captions: An App for Google Glass</a>
+      <a class="brand" href="#">Captions: An App for Glass</a>
 
       <div class="nav-collapse collapse">
         <form class="navbar-form pull-right" action="/signout" method="post">
@@ -42,6 +46,9 @@ limitations under the License.
       </div>
     </div>
   </div>
+</div>
+<div id="real-stuff" class="container">
+<iframe width="560" height="315" src="//www.youtube.com/embed/RZ-uV72pQKI" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div id="whole-body" class="container">
