@@ -23,6 +23,11 @@ limitations under the License.
   <link href="/static/bootstrap/css/bootstrap-responsive.min.css"
         rel="stylesheet" media="screen">
   <link href="/static/main.css" rel="stylesheet" media="screen">
+  <style>
+  #whole-body.container {
+    visibility: hidden;
+  }
+  </style>
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -39,7 +44,7 @@ limitations under the License.
   </div>
 </div>
 
-<div class="container">
+<div id="whole-body" class="container">
 
   {% if message %}
   <div class="alert alert-info">{{ message }}</div>
