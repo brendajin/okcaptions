@@ -32,6 +32,19 @@ limitations under the License.
     display: block;
   }
   </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+  <script>
+  function onYouTubePlayerReady(playerId) {
+    ytplayer = document.getElementById("ytPlayer");
+    // This causes the updatePlayerInfo function to be called every 250ms to
+    // get fresh data from the player
+    setInterval(updatePlayerInfo, 250);
+    updatePlayerInfo();
+    ytplayer.addEventListener("onStateChange", "onPlayerStateChange");
+    ytplayer.addEventListener("onError", "onPlayerError");
+}
+
+  </script>
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -48,7 +61,21 @@ limitations under the License.
   </div>
 </div>
 <div id="real-stuff" class="container">
-<iframe width="560" height="315" src="//www.youtube.com/embed/RZ-uV72pQKI" frameborder="0" allowfullscreen></iframe>
+
+ <div id="ytapiplayer">
+    You need Flash player 8+ and JavaScript enabled to view this video.
+  </div>
+
+  <script type="text/javascript">
+
+    var params = { allowScriptAccess: "always" };
+    var atts = { id: "myytplayer" };
+    swfobject.embedSWF("http://www.youtube.com/v/RZ-uV72pQKI?enablejsapi=1&playerapiid=ytplayer&version=3",
+                       "ytapiplayer", "425", "356", "8", null, null, params, atts);
+
+  </script>
+
+<iframe id="ytPlayer" width="560" height="315" src="http://www.youtube.com/v/RZ-uV72pQKI?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div id="whole-body" class="container">
