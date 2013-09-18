@@ -12,7 +12,7 @@ var caption = [
   {time: 71, caption: "Anything you want to, do it"},
   {time: 76, caption: "Wanna change the world?"},
   {time: 80, caption: "There's nothing to it"},
-  {time: 101, caption: "There is no life i know"},
+  {time: 101, caption: "There is no life I know"},
   {time: 104, caption: "To compare with pure imagination"},
   {time: 107, caption: "Living there you'll be free"},
   {time: 110, caption: "If you truly wish to be"},
@@ -21,7 +21,7 @@ var caption = [
   {time: 163, caption: "Anything you want to do it"},
   {time: 167, caption: "Wanna change the world"},
   {time: 170, caption: "There's nothing to it"},
-  {time: 185, caption: "There is no life i know"},
+  {time: 185, caption: "There is no life I know"},
   {time: 191, caption: "To compare with pure imagination"},
   {time: 197, caption: "Living there you'll be free"},
   {time: 204, caption: "If you truly wish to be"}
