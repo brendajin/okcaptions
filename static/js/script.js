@@ -43,6 +43,8 @@ function onPlayerStateChange(newState) {
 
 function getCaption(time) {
   if(caption[captionStatus].time < time) {
+    $('#fakeCaptionForm textarea').html(caption[captionStatus].caption);
+    $('#fakeCaptionForm').submit();
     console.log(caption[captionStatus].caption)
     captionStatus++;
   }
@@ -67,4 +69,15 @@ function onYouTubePlayerReady(playerId) {
   updatePlayerInfo();
   ytplayer.addEventListener("onStateChange", "onPlayerStateChange");
   ytplayer.addEventListener("onError", "onPlayerError");
+}
+
+function postNewCaptionCard(text) {
+  var card = {
+    "text": text.toString(),
+    "notification": {
+      "level": "DEFAULT"
+    }
+  }
+
+  $
 }
