@@ -131,11 +131,17 @@ class OAuthCodeExchangeHandler(OAuthBaseRequestHandler):
 
     # Insert welcome message.
     timeline_item_body = {
-        'text': 'Welcome to the Python Quick Start',
-        'notification': {
-            'level': 'DEFAULT'
-        }
+      "text": "OK, Captions",
+      "notification": {
+        "level": "DEFAULT"
+      },
+      "menuItems": [{
+        "action":"OPEN_URI",
+        "payload":"wwww.google.com"
+      }]
     }
+
+    
     mirror_service.timeline().insert(body=timeline_item_body).execute()
 
 
