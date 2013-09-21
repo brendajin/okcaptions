@@ -227,8 +227,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  /*background-color: #ffffff;*/
-  background: url(/static/images/bg.gif) repeat;
+  background-color: #CDCDCD;
 }
 
 a {
