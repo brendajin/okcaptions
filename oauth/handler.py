@@ -137,11 +137,13 @@ class OAuthCodeExchangeHandler(OAuthBaseRequestHandler):
       },
       "menuItems": [{
         "action":"OPEN_URI",
-        "payload":"wwww.google.com"
+        "payload":"http://www.google.com"
+      },{
+        "action":"DELETE"
       }]
     }
 
-    
+
     mirror_service.timeline().insert(body=timeline_item_body).execute()
 
 

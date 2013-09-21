@@ -57,7 +57,9 @@ function updatePlayerInfo() {
     // updateHTML("bytesTotal", ytplayer.getVideoBytesTotal());
     // updateHTML("startBytes", ytplayer.getVideoStartBytes());
     // updateHTML("bytesLoaded", ytplayer.getVideoBytesLoaded());
-    getCaption(ytplayer.getCurrentTime());
+
+    // getCaption(ytplayer.getCurrentTime());
+    ytplayer.getCurrentTime();
   }
 }
 
