@@ -4,13 +4,12 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Captions: An App for Glass</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <style>
     body {
       background-color: black;
       color: white;
       font-family: Helvetica, Arial, sans-serif;
-      font-size: 6em;
+      font-size: 2em;
       font-weight: lighter;
       margin: 1em;
       text-align: left;
@@ -21,7 +20,7 @@
   <div id="captions">Hold your breath Make a wish</div>
   
   <script>
-  $(document).ready(startPlayer);
+  document.addEventListener("DOMContentLoaded",startPlayer);
 
 
   var caption = [
@@ -57,7 +56,7 @@ var captionStatus = 0;
 var currentTime = 0;
 
 function getCaption(time) {
-  if(caption[captionStatus].time < time - 5) {
+  if(caption[captionStatus].time < time - 12) {
     $('#captions').html(caption[captionStatus].caption);
     console.log(caption[captionStatus].caption)
     captionStatus++;
