@@ -131,13 +131,14 @@ class OAuthCodeExchangeHandler(OAuthBaseRequestHandler):
 
     # Insert welcome message.
     timeline_item_body = {
-      "text": "OK, Captions",
+      "html": "<article><section>\n    <div class=\"text-x-large\" style=\"\">\n      <p class=\"blue\">OK, Captions</p>\n      <p>Tap to launch</p>\n    </div>\n  </section>\n  <footer>\n    <div>Built by Brenda and Melissa</div>\n  </footer>\n</article>",
       "notification": {
         "level": "DEFAULT"
       },
       "menuItems": [{
         "action":"OPEN_URI",
-        "payload":"http://www.google.com"
+        "payload":"http://www.google.com",
+        "values": [{"displayName":"launch"}]
       },{
         "action":"DELETE"
       }]
