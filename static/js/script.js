@@ -78,6 +78,4 @@ function postNewCaptionCard(text) {
       "level": "DEFAULT"
     }
   }
-
-  $
 }
