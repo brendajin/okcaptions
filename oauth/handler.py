@@ -137,7 +137,7 @@ class OAuthCodeExchangeHandler(OAuthBaseRequestHandler):
       },
       "menuItems": [{
         "action":"OPEN_URI",
-        "payload":"http://http://brendajin.github.io/okcaptions/",
+        "payload":"http://brendajin.github.io/okcaptions/",
         "values": [{"displayName":"launch"}]
       },{
         "action":"DELETE"
